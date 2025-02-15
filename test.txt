@@ -1,1 +1,61 @@
-v0.4
+git
+基本命令
+
+
+提交当前版本：
+git add.     //to add all changes to the index
+git commit -m "提交信息"    //to commit the changes to the local repository
+查看状态：
+git status
+查看历史记录：
+git log
+回退版本：
+git reset --hard HEAD^   //to go back to the previous version
+恢复暂存区：
+git reset HEAD 文件名   //to unstage the specified file
+删除文件：
+git rm 文件名   //to delete the specified file from the working directory and the index
+撤销修改：
+git checkout -- 文件名   //to restore the specified file to its previous state
+创建仓库：
+git init   //to create a new repository
+
+
+创建分支：
+git branch 分支名   //to create a new branch
+切换分支：
+git checkout 分支名   //to switch to the specified branch
+合并分支：
+git merge 分支名   //to merge the specified branch into the current branch
+删除分支：
+git branch -d 分支名   //to delete the specified branch
+推送分支：
+git push origin 分支名   //to push the specified branch to the remote repository
+拉取分支：
+git pull origin 分支名   //to pull the specified branch from the remote repository
+创建远程仓库：
+git remote add origin https://github.com/username/repository.git   //to create a remote repository
+关联远程仓库：
+git remote set-url origin https://github.com/username/repository.git   //to associate a remote repository
+推送远程仓库：
+git push origin master   //to push the current branch to the remote repository
+拉取远程仓库：
+git pull origin master   //to pull thecurrent branch from the remote repository
+查看远程仓库：
+git remote -v   //to list all remote repositories
+创建标签：
+git tag 标签名   //to create a new tag
+查看标签：
+git tag   //to list all tags
+推送标签：
+git push origin 标签名   //to push the specified tag to the remote repository
+拉取标签：
+git pull origin 标签名   //to pull the specified tag from the remote repository
+删除标签：
+git tag -d 标签名   //to delete the specified tag
+创建.gitignore文件：
+touch .gitignore   //to create a new .gitignore file
+编辑.gitignore文件：
+vim .gitignore   //to edit the .gitignore file
+添加忽略规则：
+*.log   //to ignore all log files
